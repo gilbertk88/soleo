@@ -21,7 +21,7 @@ get_header();
  
   <div class="position-relative overflow-hidden text-white bg-light s_intro_container row g-0 row-sm-col-1">
     <div class="col-1"></div>
-    <div class="col-3 p-lg-5 my-5 col-5 s_intro_left d-flex flex-wrap align-items-center">
+    <div class="col-12 p-lg-5 my-5 col-sm-5 px-4 s_intro_left d-flex flex-wrap align-items-center">
         <div class="col-12">
             <h1 class="display-4 fw-normal"><?php the_field('main_title'); ?></h1>
             <p class="lead fw-normal text-secondary"><?php the_field('title_details'); ?></p>
@@ -37,9 +37,9 @@ get_header();
                         <img src=" <?php the_field('badge_one_icon'); ?> " class="rounded" width="30">
                     </div>
                     <div class="row col">
-                        <span class="sub_s_t col-12" > <?php the_field('budge_one_title'); ?> </span>
-                        <span class="sub_s_c col-12"><?php the_field('badge_one_body'); ?> </span>
-                        <span class="sub_s_f col-12"><img src=" <?php echo get_template_directory_uri() .'/assets/img/Vector2.png'; ?>" class="rounded" width="10"><?php the_field('badge_one_percentage'); ?>15%</span>
+                        <span class="sub_s_t col-12 text-secondary" > <?php the_field('budge_one_title'); ?> </span>
+                        <span class="sub_s_c col-12 h3"><?php the_field('badge_one_body'); ?> </span>
+                        <span class="sub_s_f col-12 "><img src=" <?php echo get_template_directory_uri() .'/assets/img/Vector2.png'; ?>" class="rounded text-secondary" width="10"><?php the_field('badge_one_percentage'); ?></span>
                     </div>
                 </div>
                 <div class="align-middle sub_sec_2 row col-2">
@@ -47,9 +47,9 @@ get_header();
                         <img src=" <?php the_field('badge_two_icon'); ?> " class="rounded"width="30">
                     </div>
                     <div class="col row" >
-                        <span class="sub_s_t col-12" > <?php the_field('budge_two_title'); ?></span>
-                        <span class="sub_s_c col-12"> <?php the_field('badge_two_body'); ?> </span>
-                        <span class="sub_s_f col-12"><img src="<?php echo get_template_directory_uri() .'/assets/img/Vector2.png'; ?>" class="rounded" width="10"><?php the_field('badge_two_percentage'); ?></span>
+                        <span class="sub_s_t col-12 text-secondary" > <?php the_field('budge_two_title'); ?></span>
+                        <span class="sub_s_c col-12 h3"> <?php the_field('badge_two_body'); ?> </span>
+                        <span class="sub_s_f col-12 text-secondary"><img src="<?php echo get_template_directory_uri() .'/assets/img/Vector2.png'; ?>" class="rounded" width="10"><?php the_field('badge_two_percentage'); ?></span>
                     </div>
                 </div>
         </div>
@@ -65,12 +65,12 @@ get_header();
     </div>
   </div>
 
-   <div class="col-md-5 p-lg-5 mx-auto my-5 text-center ">
+   <div class=" px-4 col-md-5 p-lg-5 mx-auto my-5 text-center ">
       <h5 class="display-4 fw-normal"> <?php the_field('title_'); ?> </h5>
       <p class="lead fw-normal text-secondary"> <?php the_field('intro_content'); ?> </p>
     </div>
      
-  <div class="container py-5" id="hanging-icons">
+  <div class="px-4 container py-5" id="hanging-icons">
       
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">

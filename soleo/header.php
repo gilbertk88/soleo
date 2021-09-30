@@ -118,7 +118,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'soleo' ); ?></a>
 
-	<header id="masthead" class="d-flex justify-content-center py-3 row" >
+	<header id="masthead" class="d-flex justify-content-center py-3 row px-4" >
 		<div class="site-branding col-12 row">
 			<div class="px-2">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php
@@ -153,34 +153,32 @@
 							'theme_location' => 'menu-1',
 							'menu_id'        => 'primary-menu',
 							'menu_class' 	 => 'nav nav-pills d-flex justify-content-center ',
-							'add_li_class'  => 'site-header sticky-top py-1 nav-item nav-link m_item_single navbar-nav d-none d-sm-block ',
+							'add_li_class'  => 'site-header sticky-top py-1 nav-item nav-link m_item_single navbar-nav d-none d-sm-block h4 pull-left',
 						)
 					); ?>
-					
-					<button class="menu-toggle d-block d-sm-none col-12">Menu</button>
+
+					<div class="py-4"> 	<button class="menu-toggle d-block d-sm-none col-12">Menu</button> </div>
 					<?php
 					wp_nav_menu(
 						array(
 							'theme_location' => 'menu-1',
 							'menu_id'        => 'primary-menu',
 							'menu_class' 	 => 'nav-menu nav nav-pills d-flex justify-content-center',
-							'add_li_class'  => 'site-header single_m_item sticky-top py-1 nav-item nav-link m_item_single navbar-nav d-none d-sm-none col-12',
+							'add_li_class'  => 'site-header single_m_item sticky-top py-1 nav-item nav-link m_item_single navbar-nav d-none d-sm-none col-12 h4',
 						)
 					); ?>
-		
-					
+							
 				</div>
 				<div class="col-4 pull-right ">
 				<div class="row justify-content-end py-3">
-					<div class="col-auto py-1 m_item_single">
-					<span class="search search-wpb d-none d-sm-block  "><a class="search-icon"><svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+					<div class="col-auto py-2 m_item_single">
+					<span class="search search-wpb d-none d-sm-block  "><a class="search-icon h4"><svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
 					</a><div style="display:none;" class="wpbsearchform"><?php echo get_search_form(false); ?> </div></span>
 					<a>
 						<!-- Here's the inline SVG icon -->
 						</a>
 					</div>
-					<div class="col-auto py-1 m_item_single"><a href="tel:(833)389-5800
-					">(833)389-5800</a></div>
+					<div class="col-auto py-3 m_item_single "><a href="tel:(833)389-5800">(833)389-5800</a></div>
 					<div class="col-auto d-none d-sm-block "> <a href="#" class="s_top_button btn text-light btn-primary ">Let's Talk</a> </div>
 				</div>
 			</div>
